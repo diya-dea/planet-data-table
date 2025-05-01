@@ -1,0 +1,87 @@
+/* Apply base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header row */
+thead th {
+  background-color: #343a40;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Data cells */
+td {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Images */
+td img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+td img:hover {
+  transform: scale(1.1);
+}
+
+/* Row colors */
+tbody tr:nth-child(even) {
+  background-color: #f1f3f5;
+}
+
+tbody tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+  }
+
+  td {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+}
